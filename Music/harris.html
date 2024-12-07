@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            color: aliceblue;
+        }
+        body{
+            background-color: black;
+        }
+        fieldset{
+            border-radius: 20px;
+        }
+        legend{
+            margin-left: 37em;
+        }
+        #actor{
+            font-size: 1.5em;
+            font-style: italic;
+            padding-top: 0.5em;
+        }
+        fieldset p{
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+        li{
+            margin-left: 1.5em;
+        }
+        ul p{
+            margin-left: 2em;
+            margin-right: 2em;
+            text-align: justify;
+        }
+        h3{
+            margin-left: 0.2em;
+            font-size: 1.3em;
+        }
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 1200px) {
+            #actor {
+                font-size: 1.3em;
+            }
+
+            fieldset {
+                margin-left: 1rem;
+                width: auto;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+
+            audio {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #actor {
+                font-size: 1.2em;
+                text-align: center;
+            }
+
+            fieldset {
+                width: auto;
+                margin-left: 1rem;
+                padding: 1rem;
+            }
+
+            h3 {
+                font-size: 1.1em;
+            }
+
+            audio {
+                width: 90%;
+                max-width: 500px;
+            }
+
+            ul p {
+                margin-left: 1em;
+                text-align: justify;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            fieldset {
+                margin-left: 1rem;
+                width: auto;
+                padding: 0.5em;
+            }
+
+            #actor {
+                font-size: 1.1em;
+                padding-top: 0.3em;
+            }
+
+            h3 {
+                font-size: 1em;
+                padding-left: 5px;
+            }
+
+            audio {
+                width: 95%;
+                max-width: 400px;
+            }
+
+            ul p {
+                margin-left: 0.5em;
+                text-align: justify;
+            }
+        }
+    </style>
+</head>
+<body>
+    <fieldset style="width: 1400px; height: 110px; margin-left: 3rem; text-align: justify;" >
+        <legend>
+            <h2 id="actor">Harris Jayaraj</h2>
+        </legend>
+        <p>Harris Jayaraj is a prominent Indian film composer and music director known for his work in Tamil cinema. He gained fame for his unique style, blending traditional Indian music with contemporary sounds. His compositions often feature memorable melodies and innovative arrangements.Harris is also recognized for his ability to evoke emotions through music, making him a favorite among filmmakers and audiences alike. He has won several awards for his contributions to film music, establishing himself as a key figure in the industry.</p>
+    </fieldset> <br>
+    
+    <h3>1) June Ponal</h3> <br>
+    <ul>
+        <li>Movie: Unnale Unnale</li>
+        <li>Lyricist: Pa.Vijay</li>
+        <li>Theme: Feelings of love</li>
+        <li>About:</li>
+        <p>The song features a melodious blend of soothing vocals and vibrant instrumentals, creating an enchanting atmosphere. The lyrics express the protagonist's emotions as they reminisce about the special moments shared with their beloved.</p>
+    </ul>
+    <br>
+     <center><audio src="../Audio/Harris/June Ponal.mp3" controls></audio></center>
+
+     <h3>2) Nenjukkul Peidhidum</h3> <br>
+     <ul>
+        <li>Movie: Vaaranam Aayiram</li>
+        <li>Lyricist: Thamarai</li>
+        <li>Theme: Romantic</li>
+        <p>"Nenjukkul Peidhidum" stands out for its lyrical depth and melodic beauty, making it a memorable highlight of the Vaaranam Aayiram soundtrack.</p>
+     </ul>
+     <br>
+     <center><audio src="../Audio/Harris/Nenjukkul Peidhidum.mp3" controls></audio></center>
+
+     <h3>3) Aga Naga</h3> <br>
+     <ul>
+        <li>Movie: Ko</li>
+        <li>Lyricist: Madhank Karky</li>
+        <li>Theme: classical</li>
+        <li>About:</li>
+        <p>The track features a captivating melody that blends traditional and contemporary sounds, characteristic of Harris Jayaraj's style. The vocals are expressive, conveying the fervor and vulnerability of the protagonist's feelings. The lyrics are poetic and evocative, painting vivid images of romance and connection.</p>
+     </ul>
+     <br>
+     <center><audio src="../Audio/Harris/Aga Naga.mp3" controls></audio></center>
+
+     <h3>4) Thee Illai</h3> <br>
+     <ul>
+        <li>Movie: Engeyum Kadhal</li>
+        <li>Lyricist:Vaali</li>
+        <li>Theme: Feelings of love</li>
+        <li>About:</li>
+        <p>"Thee Illai" is a beautifully romantic song that encapsulates the essence of love and intimacy. Composed by Harris Jayaraj, the track features a soothing melody that resonates with deep emotional connection and longing.</p>
+     </ul>
+     <br>
+     <center><audio src="../Audio/Harris/Thee Illai.mp3" controls></audio></center>
+
+     <h3>5) Vennilave</h3> <br>
+     <ul>
+        <li>Movie:Thuppakki </li>
+        <li>Lyricist:Viveka</li>
+        <li>Theme: Romantic</li>
+        <li>About:</li>
+        <p>The instrumentation blends soft rhythms with lush arrangements, enhancing the song’s romantic vibe. Overall, "Vennilave" stands out as a poignant highlight in the Thuppakki soundtrack, making it a memorable ode to love and connection.</p>
+     </ul>
+     <br>
+     <center><audio src="../Audio/Harris/Vennilave.mp3" controls></audio></center>
+     <script>
+        // Select all audio elements on the page
+        const audioElements = document.querySelectorAll('audio');
+    
+        // Loop through each audio element and add an event listener for the 'play' event
+        audioElements.forEach(audio => {
+            audio.addEventListener('play', function() {
+                // Pause all other audio elements when one starts playing
+                audioElements.forEach(otherAudio => {
+                    if (otherAudio !== audio) {
+                        otherAudio.pause();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            color: antiquewhite;
+        }
+        body{
+            background-color: black;
+        }
+       
+        fieldset{
+            border-radius: 20px;
+        }
+        legend{
+            margin-left: 38em;
+        }
+        #actor{
+            font-size: 1.5em;
+            font-style: italic;
+            padding-top: 0.5em;
+        }
+        fieldset p{
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+        li{
+            margin-left: 1.5em;
+        }
+        ul p{
+            margin-left: 2em;
+        }
+        h3{
+            margin-left: 0.2em;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <fieldset style="width: 1400px; height: 120px; margin-left: 3rem; text-align: justify;" >
+        <legend>
+            <h2 id="actor">Hiphop Tamizhan</h2>
+        </legend>
+        <p>Hip Hop Tamizha is a prominent music duo from Tamil Nadu, consisting of Adhi and Jeeva. They are known for their unique blend of hip-hop and traditional Tamil music, often incorporating local cultural elements into their tracks. Their lyrics often address social issues, youth culture, and personal experiences, resonating with a broad audience.Hip Hop Tamizha gained significant popularity with hits like "Vaadi Pulla Vaadi" and "Aal Izz Well," which not only topped charts but also became anthems for the youth. Their work has played a vital role in popularizing Tamil hip-hop and inspiring a new generation of artists in the genre.</p>
+    </fieldset> <br>
+
+    <h3>1)Vilambara Idaiveli </h3> <br>
+    <ul>
+        <li>Movie: Imaikka Nodigal</li>
+        <li>Theme: Romantic</li>
+        <li>About:</li>
+        <p>"Vilambara Idaiveli" is a popular song from the Tamil film Imaikka Nodigal, composed by Hiphop Tamizha. The track features catchy beats and a vibrant melody that blends contemporary sounds with traditional elements. Sung by Hiphop Tamizha Adhi and featuring powerful lyrics, the song captures themes of love and longing, showcasing the emotions of the characters in the film.</p>
+    </ul>
+    <br>
+    <center><audio src="../Audio/Hiphop/Vilambara Idaiveli.mp3" controls></audio></center>
+
+    <h3>2) Azhagae</h3> <br>
+    <ul>
+        <li>Movie: Kathakali</li>
+        <li>Theme: Romantic</li>
+        <li>About:</li>
+        <p>"Azhaege" is a beautiful and soulful song from the Tamil film Kathakali, composed by Hiphop Tamizha. Sung by the talented Sid Sriram, the track showcases his mesmerizing vocal prowess, bringing a deep emotional resonance to the lyrics. The song revolves around themes of love and longing, expressing the complexities of relationships with poignant imagery.</p>
+    </ul>
+    <br>
+    <center><audio src="../Audio/Hiphop/Azhage.mp3" controls></audio></center>
+
+    <h3>3) Ethir Neechal</h3> <br>
+    <ul>
+        <li>Movie: Ethir Neechal</li>
+        <li>Theme: Motivational</li>
+        <li>About:</li>
+        <p>"Ethir Neechal" is a lively and upbeat song from the Tamil film of the same name, composed by Anirudh Ravichander. Sung by Anirudh himself, along with artists like Dhanush, the track embodies a youthful and energetic vibe, celebrating resilience and determination. The lyrics convey a message of overcoming obstacles and moving forward in life, making it an anthem of motivation.</p>
+    </ul>
+    <br>
+    <center><audio src="../Audio/Hiphop/Ethir Neechal.mp3" controls></audio></center>
+
+    <h3>4) Enna Nadanthalum</h3> <br>
+    <ul>
+        <li>Movie: Meesaya Murukku</li>
+        <li>Theme: Heartfelt emotions </li>
+        <li>About:</li>
+        <p>"Enna Nadanthalum" is a popular song from the film Meesaya Murukku, composed by Hiphop Tamizha. Sung by Adhi and featuring vibrant instrumentation, the track captures a playful and youthful spirit. The song revolves around themes of love, attraction, and the carefree nature of youth, highlighting the excitement and joy that come with romantic feelings.</p>
+    </ul>
+    <br>
+    <center><audio src="../Audio/Hiphop/Enna Nadanthalum.mp3" controls></audio></center>
+
+    <h3>5) Takkaru Takkaru</h3> <br>
+    <ul>
+        <li>Movie: Album Song</li>
+        <li>Theme: Jallikattu </li>
+        <li>About: </li>
+        <p>"Takkaru Takkaru" is an energetic and vibrant song , composed by Hiphop Tamizha. Sung by Adhi and featuring catchy beats, the song is characterized by its playful and lively spirit, making it a favorite for celebrations and dance.</p>
+    </ul>
+    <br>
+    <center><audio src="../Audio/Hiphop/Takkaru Takkaru.mp3" controls></audio></center>
+    <script>
+        // Select all audio elements on the page
+        const audioElements = document.querySelectorAll('audio');
+    
+        // Loop through each audio element and add an event listener for the 'play' event
+        audioElements.forEach(audio => {
+            audio.addEventListener('play', function() {
+                // Pause all other audio elements when one starts playing
+                audioElements.forEach(otherAudio => {
+                    if (otherAudio !== audio) {
+                        otherAudio.pause();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
