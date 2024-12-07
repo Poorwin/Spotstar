@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 0;
+    background: url('../Images/theatre-1713815.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: transparent; /* Initially transparent for gradient text effect */
+    background-image: linear-gradient(to right, #edba69, #ff6a00, #ff3f00);
+    background-clip: text; /* Apply gradient to text */
+    -webkit-background-clip: text; /* For Safari */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    text-align: center;
+    margin-bottom: 20px;
+    animation: glow 1.5s ease-in-out infinite alternate; /* Glowing effect animation */
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 50px;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Styling for the images */
+img {
+    width: 25em;
+    height: 18em;
+    border-radius: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for images */
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+/* Styling for the links (to ensure the hover effect is applied on the images) */
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Additional styling for the 'music' and 'movies' sections */
+#music, #movies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+#Logo {
+    position: absolute;
+    top: 30px;
+    right: 1400px;
+    width: 130px; /* Adjust the size as needed */
+    height: auto;
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 30px; /* Slightly smaller text on smaller screens */
+    }
+
+    .container {
+        width: 90%; /* Container width adjusted for smaller screens */
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    img {
+        width: 14em; /* Reduce image size on tablets */
+        height: 16em;
+    }
+
+    #Logo {
+        top: 20px;
+        right: 1200px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px; /* Smaller font size for mobile screens */
+        margin-bottom: 15px;
+    }
+
+    .container {
+        flex-direction: column; /* Stack images vertically on mobile */
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    img {
+        width: 12em; /* Smaller image size on mobile */
+        height: 14em;
+        margin-bottom: 15px;
+    }
+
+    #Logo {
+        top: 10px;
+        right: 850px;
+        width: 100px;
+    }
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px; /* Further reduce font size for very small screens */
+    }
+
+    img {
+        width: 10em; /* Further reduce image size */
+        height: 12em;
+    }
+
+    #Logo {
+        top: 0px;
+        right: 700px;
+        width: 80px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h1>Pick Your Favorite !</h1>
+    <div class="container">
+        <!-- Music Section -->
+        <div id="music">
+            <a href="./music.html">
+                <img src="../Images/Music Images.jpg" alt="Music">
+            </a>
+        </div>
+
+        <!-- Movies Section -->
+        <div id="movies">
+            <a href="./dropdown.html">
+                <img src="../Images/Movies images.jpg" alt="Movies">
+            </a>
+        </div>
+    </div>
+    <img src="../Images/Logo-removebg-preview.png" alt="" id="Logo">
+</body>
+</html>

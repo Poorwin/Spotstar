@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    background: url('../Images/theatre-1713815.jpg') no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.wrapper h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 15px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box button {
+    width: 20%;
+    height: 50%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    margin-left: 120px;
+}
+
+#Resend {
+    justify-content: center;
+    margin-left: 70px;
+    margin-top: 80px;
+    font-size: smaller;
+}
+
+#FinalOTP {
+    width: 35%;
+    height: 30px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+#Logo {
+    position: absolute;
+    top: -200px;
+    right: 840px;
+    width: 130px; /* Adjust the size as needed */
+    height: auto;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+    body {
+        margin-top: 100px;
+    }
+
+    .wrapper {
+        width: 80%;
+        padding: 25px;
+    }
+
+    #Logo {
+        top: -180px;
+        right: 30px;
+        width: 120px;
+    }
+
+    .wrapper h1 {
+        font-size: 26px;
+    }
+
+    .input-box input {
+        font-size: 14px;
+        padding: 15px 40px;
+    }
+
+    .input-box button {
+        font-size: 14px;
+        margin-left: 90px;
+    }
+
+    #FinalOTP {
+        width: 50%;
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin-top: 50px;
+    }
+
+    .wrapper {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #Logo {
+        top: -150px;
+        right: 20px;
+        width: 100px;
+    }
+
+    .wrapper h1 {
+        font-size: 24px;
+    }
+
+    .input-box input {
+        font-size: 13px;
+        padding: 12px 35px;
+    }
+
+    .input-box button {
+        font-size: 13px;
+        margin-left: 60px;
+    }
+
+    #FinalOTP {
+        width: 60%;
+        margin-left: 50px;
+    }
+
+    #Resend {
+        margin-left: 50px;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        margin-top: 20px;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #Logo {
+        top: -120px;
+        right: 10px;
+        width: 90px;
+    }
+
+    .wrapper h1 {
+        font-size: 22px;
+    }
+
+    .input-box input {
+        font-size: 12px;
+        padding: 10px 30px;
+    }
+
+    .input-box button {
+        font-size: 12px;
+    }
+
+    #FinalOTP {
+        width: 70%;
+        margin-left: 35px;
+    }
+
+    #Resend {
+        margin-left: 35px;
+        font-size: x-small;
+    }
+}
+
+    </style>
+    <script>
+        var GeneratedOTP=Math.floor(Math.random()*999999)
+        alert(GeneratedOTP)
+
+        function OTPVerification(){
+            var User=document.getElementById("otp").value
+            if (GeneratedOTP==User){
+                window.location.href="./Success.html"
+            }else{
+                document.getElementById("error").innerHTML="Incorrect OTP Try again"
+                document.getElementById("error").style.color="red"
+            }
+        }
+
+        function ResendOTP(){
+            window.location.href="./otp.html"
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+    <h1>OTP Verification</h1>
+    <p id="error"></p>
+    <div class="input-box"><input type="text" id="otp" placeholder="Verifty OTP"> <br> <br>
+    <button onclick="OTPVerification()" class="Verify">Verify</button></div>
+    <p id="Resend">Do you want to send OTP again?</p>
+    <button onclick="ResendOTP()" id="FinalOTP">Resend OTP</button>
+    <img src="../Images/Logo-removebg-preview.png" alt="" id="Logo">
+    </div>
+</body>
+</html>

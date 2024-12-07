@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+      background-image: url(../Images/Logo.png);
+      background-repeat: no-repeat;
+      background-color: black;
+      background-size: 150px 150px;
+      }
+        *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        color: aliceblue;
+      }
+        img{
+        width: 14em;
+        height: 14em;
+        margin-left: 25px;
+        border-radius: 2rem;
+       }
+       h1{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+       }
+       #a1,#a2,#a3{
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        padding-left: 3rem;
+        padding-right: 2rem;
+        margin-left: 16.75rem;
+       }
+       h2{
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+       }
+       img{
+        width: 14em;
+        height: 14em;
+        margin-left: 60px;
+        border-radius: 2rem;
+        transition: all 0.3s ease;
+       }
+       #div1,#div2,#div3{
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+       }
+       img:hover{
+         width: 13rem;
+         height: 13rem;
+       }
+       a:hover{
+        color: red;
+       }
+       a{
+        text-decoration: none;
+        font-size: 1em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    @media screen and (max-width: 1200px) {
+            #a1, #a2, #a3 {
+                font-size: 1.2rem;
+                padding: 1rem 1.5rem;
+            }
+
+            img {
+                width: 12em;
+                height: 12em;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #a1, #a2, #a3 {
+                display: block;
+                margin: 1rem auto;
+                padding: 1rem;
+                font-size: 1.2rem;
+            }
+
+            #div1, #div2, #div3 {
+                padding: 0 10%;
+            }
+
+            img {
+                width: 10em;
+                height: 10em;
+                margin-left: 0;
+            }
+
+            #div1 img, #div2 img, #div3 img {
+                width: 10em;
+                height: 10em;
+                margin: 1rem auto;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+                margin-top: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            #a1, #a2, #a3 {
+                font-size: 1rem;
+                padding: 0.8rem;
+                margin: 0.5rem;
+            }
+
+            img {
+                width: 8em;
+                height: 8em;
+                margin-left: 0;
+            }
+
+            #div1 img, #div2 img, #div3 img {
+                width: 8em;
+                height: 8em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="up">
+        <h1>Tamil Movies</h1>
+        <!-- <a id="a1" href="#Directors">Directors</a>
+        <a id="a2" href="#Masterpiece">Masterpiece</a>
+        <a id="a3" href="#Series">Series</a> -->
+    </div>
+
+    <div id="div1">
+         <h2 id="Directors">Directors</h2>
+         <a href="../Tamil Movies/Vetrimaaran.html"><img src="../Images/Tamil Directors/Vetrimaaran.jpg" alt=""></a>
+         <a href="../Tamil Movies/Maniratnam.html"><img src="../Images/Tamil Directors/Maniratnam.jpg" alt=""></a>
+         <a href="../Tamil Movies/GVM.html"><img src="../Images/Tamil Directors/GVM.jpg" alt=""></a>
+         <a href="../Tamil Movies/Shankar.html"><img src="../Images/Tamil Directors/Shankar.jpg" alt=""></a>
+         <a href="../Tamil Movies/Loki.html"><img src="../Images/Tamil Directors/Loki.jpg" alt=""></a>
+    </div>
+
+    <div id="div2">
+        <h2 id="Masterpiece">Masterpiece</h2>
+        <a href="../Tamil Movies/Anbesivam.html"><img src="../Images/Tam Masterpiece/Anbe sivam.jpg" alt=""></a>
+        <a href="../Tamil Movies/Sooraraipottru.html"><img src="../Images/Tam Masterpiece/Soorarai Pottru.jpg" alt=""></a>
+        <a href="../Tamil Movies/Vikramvedha.html"><img src="../Images/Tam Masterpiece/Vikram Vedha.jpg" alt=""></a>
+        <a href="../Tamil Movies/Ratchasan.html"><img src="../Images/Tam Masterpiece/Ratchasan.jpg" alt=""></a>
+        <a href="../Tamil Movies/Uriyadi.html"><img src="../Images/Tam Masterpiece/Uriyadi.jpg" alt=""></a>
+    </div>
+
+    <div id="div3">
+        <h2 id="Series">Series</h2>
+        <a href="../Tamil Movies/Vilangu.html"><img src="../Images/Tam Series/Vilangu.jpg" alt=""></a>
+        <a href="../Tamil Movies/Vadhandhi.html"><img src="../Images/Tam Series/Vathanthi.jpg" alt=""></a>
+        <a href="../Tamil Movies/Suzhal.html"><img src="../Images/Tam Series/Suzhal.jpg" alt=""></a>
+        <a href="../Tamil Movies/Akashvaani.html"><img src="../Images/Tam Series/Akash Vaani.jpg" alt=""></a>
+        <a href="../Tamil Movies/triples.html"><img src="../Images/Tam Series/Triples.jpg" alt=""></a>
+    </div>
+</body>
+</html>

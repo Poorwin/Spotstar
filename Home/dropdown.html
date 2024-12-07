@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* General reset */
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 250px;
+    background: url('../Images/theatre-1713815.jpg') no-repeat;
+    background-size: cover;
+}
+
+/* Styling for h2 */
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #edba69, #ff6a00, #ff3f00);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Wrapper styling */
+.wrapper {
+    width: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+/* Select styling */
+#select {
+    border-radius: 50px;
+    height: 50px;
+    width: 100%;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Focus effect for select */
+#select:focus {
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Option styling */
+.wrapper option {
+    padding-left: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Button styling */
+#button1 {
+    height: 40px;
+    width: 120px;
+    border-radius: 40px;
+    background: #f3b654;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+#button1:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: #f39c12; /* Slightly darker hover color */
+}
+
+#div1 {
+    margin-left: 135px;
+}
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 768px) {
+    body {
+        margin-top: 150px; /* Adjust top margin on smaller screens */
+    }
+
+    .wrapper {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 18px; /* Adjust font size of heading */
+    }
+
+    #select {
+        font-size: 14px; /* Adjust font size of select */
+        height: 45px;
+    }
+
+    #button1 {
+        width: 100px; /* Adjust button size */
+        font-size: 14px; /* Adjust font size of button */
+    }
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 480px) {
+    body {
+        margin-top: 100px; /* Adjust top margin further for mobile */
+    }
+
+    .wrapper {
+        width: 90%; /* Make wrapper width even smaller on mobile */
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 16px; /* Smaller font size for the header */
+    }
+
+    #select {
+        font-size: 12px; /* Smaller font size for select */
+        height: 40px;
+    }
+
+    #button1 {
+        width: 90px; /* Smaller button size for mobile */
+        font-size: 13px; /* Adjust button font size for mobile */
+    }
+
+    #div1 {
+        margin-left: 0; /* Center button on mobile */
+        text-align: center;
+    }
+}
+
+    </style>
+    <script>
+        function Selection() {
+            var choice = document.getElementById("select").value;
+
+            if (choice == 'TamilMovies') {
+                window.location.href = './Tamilmovies.html';
+            }
+            else if (choice == 'EnglishMovies') {
+                window.location.href = './Englishmovies.html';
+            }
+            else if (choice == 'JapaneseAnime') {
+                window.location.href = './JapAnimes.html';
+            }
+            else {
+                alert('Please select a valid language');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Choose the type of language that you want !</h2>
+    <div class="wrapper">
+        <select id="select">
+            <option value="">Select the language</option>
+            <option value="TamilMovies">Tamil Movies</option>
+            <option value="EnglishMovies">English Movies</option>
+            <option value="JapaneseAnime">Japanese Anime</option>
+        </select>
+        <div id="div1">
+            <button id="button1" onclick="Selection()">Next</button>
+        </div>
+    </div>
+</body>
+</html>

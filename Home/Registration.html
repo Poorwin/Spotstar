@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    background: url('../Images/theatre-1713815.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 400px;
+    background: transparent;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.wrapper h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.wrapper .input-box {
+    height: 35px;
+    width: 90%;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 15px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.wrapper .btn {
+    width: 50%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.Back a {
+    text-decoration: none;
+}
+
+.Back a:hover {
+    text-decoration: underline;
+}
+
+#Logo {
+    position: absolute;
+    top: -170px;
+    right: 840px;
+    width: 130px; /* Adjust the size as needed */
+    height: auto;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+    body {
+        margin-top: 100px;
+    }
+
+    .wrapper {
+        width: 80%;
+        padding: 25px;
+    }
+
+    #Logo {
+        top: -180px;
+        right: 30px;
+        width: 120px;
+    }
+
+    .wrapper h1 {
+        font-size: 26px;
+    }
+
+    .input-box input {
+        font-size: 14px;
+        padding: 15px 40px;
+    }
+
+    .wrapper .btn {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin-top: 50px;
+    }
+
+    .wrapper {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #Logo {
+        top: -150px;
+        right: 20px;
+        width: 100px;
+    }
+
+    .wrapper h1 {
+        font-size: 24px;
+    }
+
+    .input-box input {
+        font-size: 13px;
+        padding: 12px 35px;
+    }
+
+    .wrapper .btn {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        margin-top: 20px;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #Logo {
+        top: -120px;
+        right: 10px;
+        width: 90px;
+    }
+
+    .wrapper h1 {
+        font-size: 22px;
+    }
+
+    .input-box input {
+        font-size: 12px;
+        padding: 10px 30px;
+    }
+
+    .wrapper .btn {
+        font-size: 12px;
+    }
+}
+
+    </style>
+    <script>
+        // JavaScript validation code goes here (as above)
+        // Function to validate username
+function validateUsername(username) {
+    const usernamePattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]+$/;
+    return usernamePattern.test(username);
+}
+
+// Function to validate name (at least one uppercase letter)
+function validateName(name) {
+    const namePattern = /[A-Z]/;
+    return namePattern.test(name);
+}
+
+// Function to validate email (must contain "@")
+function validateEmail(email) {
+    return email.includes('@');
+}
+
+// Function to validate password
+function validatePassword() {
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+    const errorMessage = document.getElementById('error-message');
+    
+    // Check if the passwords match
+    if (password !== confirmPassword) {
+        errorMessage.style.display = 'block';
+    } else {
+        errorMessage.style.display = 'none';
+    }
+}
+
+// Function to handle form submission and validate all inputs
+function validateForm(event) {
+    event.preventDefault(); // Prevent the form from submitting before validation
+    
+    const username = document.getElementById('Username').querySelector('input').value;
+    const name = document.getElementById('Name').querySelector('input').value;
+    const email = document.getElementById('MailId').querySelector('input').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+
+    let valid = true;
+
+    // Validate username
+    if (!validateUsername(username)) {
+        alert("Username must contain at least one uppercase letter, one lowercase letter, and one number.");
+        valid = false;
+    }
+    
+    // Validate name
+    if (!validateName(name)) {
+        alert("Name must contain at least one uppercase letter.");
+        valid = false;
+    }
+
+    // Validate email
+    if (!validateEmail(email)) {
+        alert("Email must contain '@'.");
+        valid = false;
+    }
+
+    // Validate password match
+    if (password !== confirmPassword) {
+        alert("Passwords do not match.");
+        valid = false;
+    }
+
+    // If all validations pass, redirect to the next page
+    if (valid) {
+        window.location.href = './otp.html'; // Redirect to Success page
+    }
+    else{
+        alert('please give the valid details')
+    }
+}
+
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="" method="POST">
+            <h1>Registration</h1>
+            <div class="input-box" id="Username">
+                <input type="text" placeholder="User Name" required>
+            </div>
+            <div class="input-box" id="Name">
+                <input type="text" placeholder="Name" required>
+            </div>
+            <div class="input-box" id="MailId">
+                <input type="text" placeholder="Mail Id" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" id="password" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirm Password" id="confirmPassword" required>
+            </div>
+            <button type="button" class="btn" onclick="validateForm(event)">Submit</button>
+            <div class="Back">
+                <a href="./index.html">Back</a>
+            </div>
+        </form>
+        <img src="../Images/Logo-removebg-preview.png" alt="" id="Logo">
+        <p id="error-message" style="color: red; display: none;">Passwords do not match!</p>
+    </div>
+</body>
+</html>

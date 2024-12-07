@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+      background-image: url(../Images/Logo.png);
+      background-repeat: no-repeat;
+      background-color: black;
+      background-size: 150px 150px;
+      }
+    *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        color: aliceblue;
+    }
+    h1{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    #a1,#a2,#a3{
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        padding-left: 4rem;
+        padding-right: 2rem;
+        margin-left: 16.75rem;
+       }
+       img{
+        width: 14em;
+        height: 14em;
+        margin-left: 60px;
+        border-radius: 2rem;
+        transition: all 0.3s ease;
+       }
+       #div1,#div2,#div3{
+          margin-top: 2.5rem;
+          margin-bottom: 2rem;
+          margin-left: 0.8rem;
+       }
+       img:hover{
+         width: 13rem;
+         height: 13rem;
+       }
+       a:hover{
+        color: red;
+       }
+       a{
+        text-decoration: none;
+        font-size: 1em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h2{
+        margin-bottom:0.5rem;
+    }
+    @media screen and (max-width: 1200px) {
+            #a1, #a2, #a3 {
+                font-size: 1.2rem;
+                padding: 1rem 1.5rem;
+            }
+
+            img {
+                width: 12em;
+                height: 12em;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #a1, #a2, #a3 {
+                display: block;
+                margin: 1rem auto;
+                padding: 1rem;
+                font-size: 1.2rem;
+            }
+
+            #div1, #div2, #div3 {
+                padding: 0 10%;
+            }
+
+            img {
+                width: 10em;
+                height: 10em;
+                margin-left: 0;
+            }
+
+            #div1 img, #div2 img, #div3 img {
+                width: 10em;
+                height: 10em;
+                margin: 1rem auto;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+                margin-top: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            #a1, #a2, #a3 {
+                font-size: 1rem;
+                padding: 0.8rem;
+                margin: 0.5rem;
+            }
+
+            img {
+                width: 8em;
+                height: 8em;
+                margin-left: 0;
+            }
+
+            #div1 img, #div2 img, #div3 img {
+                width: 8em;
+                height: 8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="Up">
+        <h1>English Movies</h1>
+        <!-- <a id="a1" href="#Actors">Actors</a>
+        <a id="a2" href="#Marvel">Marvel</a>
+        <a id="a3" href="#Series">Series</a> -->
+    </div>
+    
+    <div id="div1">
+        <h2 id="Actors">Actors</h2>
+         <a href="../Englishmovies/Paul.html"><img src="../Images/Eng Actors/Paul.jpg" alt=""></a>
+         <a href="../Englishmovies/Arnold.html"><img src="../Images/Eng Actors/Arnold.jpg" alt=""></a>
+         <a href="../Englishmovies/CilianMurphy.html"><img src="../Images/Eng Actors/Cilian Murphy.jpg" alt=""></a>
+         <a href="../Englishmovies/Leonardo.html"><img src="../Images/Eng Actors/Leonardo.jpg" alt=""></a>
+         <a href="../Englishmovies/kaenu.html"><img src="../Images/Eng Actors/John.jpg" alt=""></a>
+    </div>
+
+    <div id="div2">
+        <h2 id="Marvel">Marvel</h2>
+        <a href="../Englishmovies/Captainamerica.html"><img src="../Images/Marvel/Captain America.jpg" alt=""></a>
+        <a href="../Englishmovies/Hulk.html"><img src="../Images/Marvel/Hulk.jpg" alt=""></a>
+        <a href="../Englishmovies/Spiderman.html"><img src="../Images/Marvel/Spiderman.jpg" alt=""></a>
+        <a href="../Englishmovies/Deadpool.html"><img src="../Images/Marvel/Deadpool.jpg" alt=""></a>
+        <a href="../Englishmovies/Endgame.html"><img src="../Images/Marvel/Avengers.jpg" alt=""></a>
+    </div>
+
+    <div id="div3">
+        <h2 id="Series">Series</h2>
+        <a href="../Englishmovies/Prisonbreak.html"><img src="../Images/Eng series/Prison Break.jpg" alt=""></a>
+        <a href="../Englishmovies/Breakingbad.html"><img src="../Images/Eng series/Breaking Bad.jpg" alt=""></a>
+        <a href="../Englishmovies/Vampirediaries.html"><img src="../Images/Eng series/Vampire Diaries.jpg" alt=""></a>
+        <a href="../Englishmovies/Moneyheist.html"><img src="../Images/Eng series/Money Heist.jpg" alt=""></a>
+        <a href="../Englishmovies/Strangerthings.html"><img src="../Images/Eng series/Stranger Things.jpg" alt=""></a>
+    </div>
+</body>
+</html>

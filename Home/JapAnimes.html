@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{
+      background-image: url(../Images/Logo.png);
+      background-repeat: no-repeat;
+      background-color: black;
+      background-size: 150px 150px;
+      }
+      *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        color: aliceblue;
+    }
+    h1{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    #a1,#a2,#a3{
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        padding-left: 4rem;
+        padding-right: 2rem;
+        margin-left: 15rem;
+       }
+       img{
+        width: 14em;
+        height: 14em;
+        margin-left: 60px;
+        border-radius: 2rem;
+        transition: all 0.3s ease;
+       }
+       #div1,#div2,#div3{
+          margin-top: 2.5rem;
+          margin-bottom: 2rem;
+          margin-left: 0.8rem;
+       }
+       img:hover{
+         width: 13rem;
+         height: 13rem;
+       }
+       a:hover{
+        color: red;
+       }
+       a{
+        text-decoration: none;
+        font-size: 1em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h2{
+        margin-bottom:0.5rem;
+    }
+    @media screen and (max-width: 1200px) {
+            #a1, #a2, #a3 {
+                font-size: 1.2rem;
+                padding: 1rem 1.5rem;
+            }
+
+            img {
+                width: 12em;
+                height: 12em;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #a1, #a2, #a3 {
+                display: block;
+                margin: 1rem auto;
+                padding: 1rem;
+                font-size: 1.2rem;
+            }
+
+            #div1, #div2, #div3 {
+                padding: 0 10%;
+            }
+
+            img {
+                width: 10em;
+                height: 10em;
+                margin-left: 0;
+            }
+
+            #div1 img, #div2 img, #div3 img {
+                width: 10em;
+                height: 10em;
+                margin: 1rem auto;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+                margin-top: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            #a1, #a2, #a3 {
+                font-size: 1rem;
+                padding: 0.8rem;
+                margin: 0.5rem;
+            }
+
+            img {
+                width: 8em;
+                height: 8em;
+                margin-left: 0;
+            }
+
+            #div1 img, #div2 img, #div3 img {
+                width: 8em;
+                height: 8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="Up">
+         <h1>Japanese Animes</h1>
+         <!-- <a id="a1" href="#Top Rated"> Top Rated</a>
+         <a id="a2" href="#Trending Now">Trending Now</a>
+         <a id="a3" href="#Movies">Movies</a> -->
+    </div>
+
+    <div id="div1">
+        <h2 id="Top Rated">Top Rated</h2>
+        <a href="../JapAnimes/OnePiece.html"><img src="../Images/Top Rated/One Piece.jpg" alt=""></a>
+        <a href="../JapAnimes/Naruto.html"><img src="../Images/Top Rated/Naruto.jpg" alt=""></a>
+        <a href="../JapAnimes/Demonslayer.html"><img src="../Images/Top Rated/Demon Slayer.jpg" alt=""></a>
+        <a href="../JapAnimes/AOT.html"><img src="../Images/Top Rated/AOT.jpg" alt=""></a>
+        <a href="../JapAnimes/Blackclover.html"><img src="../Images/Top Rated/Black Clover.jpg" alt=""></a>
+    </div>
+
+    <div id="div2">
+        <h2 id="Trending Now">Trending Now</h2>
+        <a href="../JapAnimes/JJK.html"><img src="../Images/Trending anime/Jujutsu kaisen.jpg" alt=""></a>
+        <a href="../JapAnimes/SoloLeveling.html"><img src="../Images/Trending anime/Solo Leveling.jpg" alt=""></a>
+        <a href="../JapAnimes/Haikyuu.html"><img src="../Images/Trending anime/Haikyuu.jpg" alt=""></a>
+        <a href="../JapAnimes/Chainsawman.html"><img src="../Images/Trending anime/Chainsaw man.jpg" alt=""></a>
+        <a href="../JapAnimes/Myheroacademia.html"><img src="../Images/Trending anime/My hero academia.jpg" alt=""></a>
+    </div>
+
+    <div id="div3">
+        <h2 id="Movies">Movies</h2>
+        <a href="../JapAnimes/Yourname.html"><img src="../Images/Jap Movies/Your name.jpg" alt=""></a>
+        <a href="../JapAnimes/Iwteyp.html"><img src="../Images/Jap Movies/I want to eat your pancreas.jpg" alt=""></a>
+        <a href="../JapAnimes/Graveof.html"><img src="../Images/Jap Movies/Grave of the fireflies.jpg" alt=""></a>
+        <a href="../JapAnimes/Thewindrises.html"><img src="../Images/Jap Movies/The Wind Rises.jpg" alt=""></a>
+        <a href="..//JapAnimes/Silentvoice.html"><img src="../Images/Jap Movies/A Silent Voice.jpg" alt=""></a>
+    </div>
+</body>
+</html>

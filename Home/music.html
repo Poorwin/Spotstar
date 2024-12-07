@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="icon" href="../Images/Logo.png">
+</head>
+<style>
+    body{
+      background-image: url(../Images/Logo.png);
+      background-repeat: no-repeat;
+      background-color: black;
+      background-size: 150px 150px;
+      margin: 0;
+      
+    }
+    *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        color: aliceblue;
+    }
+    a{
+        text-decoration: none;
+        font-size: 1.2em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    a:hover{
+        color: red;
+       
+
+    }
+    img{
+        width: 14em;
+        height: 14em;
+        margin-left: 25px;
+        border-radius: 2rem;
+        transition: all 0.3s ease;
+    }
+    img:hover{
+         width: 16rem;
+         height: 16rem;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 38px;
+    }
+    #Up {
+            gap: 1rem;
+        }
+
+    #a1,#a2,#a3,#a4{
+        padding-bottom: 3rem; 
+        padding-top: 2rem;
+        padding-right: 9rem;
+        padding-left: 3rem;
+        margin-left: 5.75rem;
+    }
+    /*- actors section-*/
+    #div1{
+        margin-top: 2em;
+        margin-bottom: 2rem;
+    }
+    #Actor{
+        margin-left:2rem;
+        margin-bottom: 2rem;
+        font-weight:700 ;
+    }
+
+    #div2{
+        margin-top: 2em;
+        margin-bottom: 2rem;
+    }
+    #Lyricist{
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #div3{
+        margin-top: 2em;
+        margin-bottom: 2rem;
+    }
+    #MusicDirectors{
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #div4{
+        margin-top: 2em;
+        margin-bottom: 2rem;
+    }
+    #PlaybackSingers{
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+     audio {
+            display: block;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+     /* Responsive Design */
+     @media only screen and (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+                margin-top: 2rem;
+            }
+
+            #Up {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 0 1rem;
+            }
+
+            #a1, #a2, #a3, #a4 {
+                margin-left: 0;
+                padding-right: 0;
+                text-align: left;
+            }
+
+            img {
+                width: 10em;
+                height: 10em;
+                margin-left: 0;
+            }
+
+            img:hover {
+                width: 12em;
+                height: 12em;
+            }
+
+            #div1, #div2, #div3, #div4 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            #div1 img, #div2 img, #div3 img, #div4 img {
+                width: 12em;
+                height: 12em;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+
+            #Up {
+                padding: 0 1rem;
+            }
+
+            #a1, #a2, #a3, #a4 {
+                padding: 1rem;
+                font-size: 1em;
+                text-align: center;
+            }
+
+            img {
+                width: 8em;
+                height: 8em;
+            }
+
+            img:hover {
+                width: 10em;
+                height: 10em;
+            }
+
+            #div1 img, #div2 img, #div3 img, #div4 img {
+                width: 10em;
+                height: 10em;
+            }
+
+            #div1, #div2, #div3, #div4 {
+                display: block;
+                text-align: center;
+            }
+        }
+
+   
+</style>
+<body>
+    <div id="Up">
+           <h1>Music</h1>
+         
+           
+           <!-- <a  id="a1" href="#Actor">Actor</a>
+           <a  id="a2" href="#Lyricist">Lyricist</a>
+           <a  id="a3" href="#MusicDirectors">Music Directors</a>
+           <a  id="a4" href="#PlaybackSingers">Playback Singers</a> -->
+        
+           
+    </div>
+    <div id="div1">
+        <h2 id="Actor">Actor</h2>
+        <a href="../Music/vijay.html"><img src="../Images/Actors/Vijay.jpg" alt=""></a>
+        <a href="../Music/dhanush.html"><img src="../Images/Actors/Dhanush.jpg" alt=""></a>
+        <a href="../Music/suriya.html"><img src="../Images/Actors/Suriya.jpg" alt=""></a>
+        <a href="../Music/Ajith.html"><img src="../Images/Actors/Ajith.jpg" alt=""></a>
+        <a href="../Music/Vijay Sethupathi.html"><img src="../Images/Actors/Vijay Sethupathi.jpg" alt=""></a>
+    </div>
+    <div id="div2">
+        <h2 id="Lyricist">Lyricist</h2>
+        <a href="../Music/Vaali.html"><img src="../Images/Lyricist/Vaali.jpg" alt=""></a>
+        <a href="../Music/NaMuthukumar.html"><img src="../Images/Lyricist/Na.Muthukumar.jpg" alt=""></a>
+        <a href="../Music/DLyricist.html"><img src="../Images/Lyricist/Dhanush Lyricist.jpg" alt=""></a>
+        <a href="../Music/Vivek.html"><img src="../Images/Lyricist/Vivek Lyricist.jpg" alt=""></a>
+        <a href="../Music/Hiphop.html"><img src="../Images/Lyricist/Hiphop.jpg" alt=""></a>
+    </div>
+    <div id="div3">
+        <h2 id="MusicDirectors">Music Directors</h2>
+        <a href="../Music/ARR.html"><img src="../Images/Music Directors/ARR.jpg" alt=""></a>
+        <a href="../Music/harris.html"><img src="../Images/Music Directors/harris.jpg" alt=""></a>
+        <a href="../Music/Ilaiyaraja.html"><img src="../Images/Music Directors/illaiyaraja.jpg" alt=""></a>
+        <a href="../Music/Aniruth.html"><img src="../Images/Music Directors/Aniruth.jpg" alt=""></a>
+        <a href="../Music/GV.html"><img src="../Images/Music Directors/GV.jpg" alt=""></a>
+    </div>
+    <div id="div4">
+        <h2 id="PlaybackSingers">Playback Singers</h2>
+        <a href="../Music/SPB.html"><img src="../Images/Playback Singers/SPB.jpg" alt=""></a>
+        <a href="../Music/Vijjayantony.html"><img src="../Images/Playback Singers/Vijay Antony.jpg" alt=""></a>
+        <a href="../Music/Shakthi.html"><img src="../Images/Playback Singers/Shakthishree.jpg" alt=""></a>
+        <a href="../Music/Yuvan.html"><img src="../Images/Playback Singers/Yuvan.jpg" alt=""></a>
+        <a href="../Music/Sean.html"><img src="../Images/Playback Singers/Sean Roaldan.jpg" alt=""></a>
+    </div>
+</body>
+</html>

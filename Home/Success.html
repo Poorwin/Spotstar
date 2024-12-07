@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+         body{
+            justify-content: center;
+            align-items: center;
+            background: url('../Images/theatre-1713815.jpg') no-repeat;
+            background-size: cover;
+            background-position:fixed;
+         }
+         img{
+            width: 15%;
+            height: auto;
+            margin-top: 150px;
+            margin-left: 630px;
+            transition: transform 0.3s ease;
+         }
+         img:hover {
+           transform: scale(1.2);
+         }
+         h1{
+            margin-left: 500px;
+            margin-top: 5px;
+            color: #fff;
+         }
+         .back{
+            margin-top: 250px;
+            margin-left: 950px;
+            font-weight: 700;
+         }
+         .back button{
+            height: 30px;
+            width: 70px;
+            border-radius: 40px;
+            background: transparent;
+            outline: none;
+            border: none;
+            border: 2px solid rgba(255,255,255,.2);  
+            font-size: 13px;
+            color: #fff;
+            background: #f3b654;
+         }
+         .back button:hover{
+            background: #f39c12;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+         }
+         .back a{
+            text-decoration: none;
+            color: #fff;
+            margin-left: 450px;
+         }
+         .back a:hover{
+            text-decoration: underline;
+         }
+         #Logo{
+            position: absolute;
+            top: -150px;
+            right: 1400px;
+            width: 130px; /* Adjust the size as needed */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="img">
+        <img src="../Images/verified.png" alt="">
+    </div>
+    <h1>You've Created Account Successfully !</h1>
+    <div class="back">
+      <a href="./index.html" id="wrapper-1"><button>Next</button></a>
+    </div>
+    <img src="../Images/Logo-removebg-preview.png" alt="" id="Logo">
+</body>
+</html>

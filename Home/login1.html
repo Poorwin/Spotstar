@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotStar - About and Copyright</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            background: url('../Images/theatre-1713815.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        /* Content section */
+        .content {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.8); /* Slight background for readability */
+            border-radius: 8px; /* Rounded corners for the content box */
+        }
+
+        .content h1 {
+            font-size: 36px;
+            color: #2a2a2a;
+        }
+
+        .content p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+
+        /* Flexbox layout for footer content */
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* About Us Section */
+        .about-us {
+            flex: 1;
+            min-width: 300px;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .about-us h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #f4c542;  /* Golden color for the title */
+        }
+
+        .about-us p {
+            font-size: 16px;
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        /* Copyright Section */
+        .copyright {
+            flex: 1;
+            min-width: 300px;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .copyright p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        /* Next Button Container */
+        .next-btn-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .next-btn {
+            background-color: #f4c542; /* Golden color */
+            color: #333;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .next-btn:hover {
+            background-color: #e0b33b; /* Darker shade on hover */
+        }
+
+        /* Responsive design for mobile and tablet screens */
+        @media (max-width: 768px) {
+            .content h1 {
+                font-size: 28px;
+            }
+
+            .content p {
+                font-size: 16px;
+            }
+
+            /* Footer Section */
+            footer {
+                padding: 30px 10px;
+            }
+
+            /* Footer content adjustment */
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-us,
+            .copyright {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .about-us h2 {
+                font-size: 22px;
+            }
+
+            .about-us p,
+            .copyright p {
+                font-size: 14px;
+            }
+
+            /* Next Button adjustment */
+            .next-btn-container {
+                margin-top: 20px;
+            }
+
+            .next-btn {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content h1 {
+                font-size: 24px;
+            }
+
+            .content p {
+                font-size: 14px;
+            }
+
+            .footer-content {
+                padding: 0 10px;
+            }
+
+            .about-us p,
+            .copyright p {
+                font-size: 12px;
+            }
+
+            .next-btn {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main content of the website -->
+    <div class="content">
+        <h1>Welcome to SpotStar</h1>
+        <p>Enjoy the latest music and movies at your fingertips, all in one place with SpotStar!</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="about-us">
+                <h2>About SpotStar</h2>
+                <p>SpotStar is an innovative platform designed for all music and movie lovers. We provide you with access to an extensive library of music tracks, movies, and TV shows from various genres. Whether you want to listen to the latest chart-toppers or watch a classic movie, SpotStar is your one-stop solution for all your entertainment needs.</p>
+                <p>Our mission is to create a seamless experience for users to enjoy their favorite content anytime and anywhere. We work closely with music labels and film studios to ensure that SpotStar offers the most up-to-date releases in music and films. You can explore, create playlists, share your favorites, and even get personalized recommendations based on your preferences.</p>
+                <p>We believe entertainment should be accessible and enjoyable for everyone, and we strive to provide high-quality content for all ages and tastes. Join us on SpotStar and take your entertainment experience to the next level!</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 SpotStar. All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <!-- Next Button -->
+        <div class="next-btn-container">
+            <button id="nextBtn" class="next-btn">Next</button>
+        </div>
+    </footer>
+
+    <!-- JavaScript for redirection -->
+    <script>
+        document.getElementById('nextBtn').addEventListener('click', function() {
+            window.location.href = './Musicormovies.html';  // Replace 'nextPage.html' with the actual next page you want to go to.
+        });
+    </script>
+</body>
+</html>
